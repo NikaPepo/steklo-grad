@@ -1,0 +1,31 @@
+{
+  "menu": [
+    {
+      "menuHeader": "Основные Разделы"
+    },
+    {
+      "name": "Категории",
+      "route": "categories"
+    },{
+      "name": "Продукты",
+      "route": "products"
+    },{
+      "name": "Услуги",
+      "route": "services"
+    },{
+      "name": "Альбомы",
+      "route": "albums"
+    },{
+      "name": "Галерея",
+      "route": "album-images"
+    },
+    {
+      "name": "Отзывы",
+      "route": "reviews"
+    },
+    {
+      "name": "Контакты",
+      "route": "options"
+    }
+  ]
+}

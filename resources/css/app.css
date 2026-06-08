@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+@import "./boxicons.min.css";
+@import "./fancybox.css";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+
+@theme {
+    /*--font-family: "Inter";*/
+    --color-brand-primary: #05828E;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@layer utilities {
+    .welcome-swiper {
+        opacity: 0;
+    }
+
+    .welcome-swiper.swiper-initialized {
+        opacity: 1;
+    }
+
+    .banner-swiper {
+        opacity: 0;
+        transition: opacity .4s ease;
+    }
+
+    .banner-swiper.swiper-initialized {
+        opacity: 1;
+    }
+    .swiper-pagination-bullet:hover {
+        transform: scale(1.3);
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-brand-primary)!important;
+        transform: scale(1.3);
+    }
+
+
+
+    .swiper-button-prev svg,
+    .swiper-button-next svg {
+        display: none !important;
+    }
+
+    .btn-swiper  {
+        @apply text-white! ;
+    }
+
+    .btn-left {
+        --tw-translate-x: 1rem;
+    }
+
+    .btn-right {
+        --tw-translate-x: -1rem;
+    }
+    @media (min-width: 1280px) {
+        .btn-swiper {
+            @apply rounded-full bg-brand-primary  flex hover:bg-[#9BA8B8] shadow-md hover:shadow-lg
+            transition-colors duration-600 ease-in-out items-center justify-center;
+        }
+    }
+
+    @media (min-width: 1680px) {
+        .btn-left {
+           --tw-translate-x: 10rem;
+        }
+
+        .btn-right {
+           --tw-translate-x: -10rem;
+        }
+        .btn-swiper {
+        @apply absolute top-1/2 -translate-y-1/2 w-12 h-12
+        ;
+    }
+    }
+    .file-success {
+        display: none !important;
+    }
+
+
+}
+
+
+
+

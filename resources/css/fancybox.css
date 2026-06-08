@@ -1,0 +1,32 @@
+.about-marquee {
+    width: 530px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.7s ease;
+}
+
+.marquee-track a {
+    flex: 0 0 100%;
+    height: 100%;
+}
+
+.marquee-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.f-thumbs {
+    display: none !important;
+}
+
+.fancybox__thumbs {
+    display: none !important;
+}
+
+
