@@ -9,7 +9,7 @@ trait CopiesSeedImages
 {
     protected function copySeedImage(string $url, string $folder): string
     {
-        $source =  storage_path("app/public/seed-images/$url");
+        $source =  public_path("seed-images/$url");
 
         if (!file_exists($source)) {
             throw new \RuntimeException(
